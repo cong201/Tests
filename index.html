@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Submiton</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Form Submission</h1>
+        <form id="myForm">
+            <div class="form-phone">
+                <label for="phone">Số điện thoại:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <select class="form-select" id="city" aria-label=".form-select-sm">
+                <option value="" selected>Chọn tỉnh thành</option>
+            </select>
+            <select class="form-select" id="district" aria-label=".form-select-sm">
+                <option value="" selected>Chọn quận huyện</option>
+            </select>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <div id="output"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
